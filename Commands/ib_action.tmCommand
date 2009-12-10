@@ -23,7 +23,7 @@ def find_concept(argument)
 end
 
 puts &lt;&lt;-SNIPPET
-ib_action :${1:#{method}} do |sender|
+ib_action :${1:#{method}} do${2: |sender|}
 	$0
 end
   SNIPPET
