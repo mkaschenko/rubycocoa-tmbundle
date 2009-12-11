@@ -23,7 +23,7 @@ def find_concept(argument)
 end
 
 puts &lt;&lt;-SNIPPET
-ib_action :${1:#{method}} do${2: |sender|}
+ib_action :${1:#{method}} do${2/(^(?&lt;var&gt;\s*[a-z_][a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1: |)/}${2:sender}${2/(^(?&lt;var&gt;\s*[a-z_][a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1:|)/}
 	$0
 end
   SNIPPET
