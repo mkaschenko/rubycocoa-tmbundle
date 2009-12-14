@@ -34,7 +34,7 @@ end
 	<key>input</key>
 	<string>selection</string>
 	<key>name</key>
-	<string>ib_action</string>
+	<string>ib_action .. do .. end</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
